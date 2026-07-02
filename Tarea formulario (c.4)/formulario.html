@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form action="">
+        <h1>My feedback form</h1>
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="username">
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+        </div> <br>
+        <div>
+            <label for="options-emotions">Please check all the emotions that apply to you:</label><br>
+            <input type="checkbox" id="options-emotions" value="first-checkbox">Angry<br>
+            <input type="checkbox" id="Sad" value="second-checkbox">Sad <br>
+            <input type="checkbox" id="Happy" value="third-checkbox">Happy <br>
+            <input type="checkbox" id="Ambivalent" value="four-checkbox">Ambivalent
+        </div><br>
+        <div>
+            <span>How satisfied were you with our service:</span>
+            <div>
+                <label for="">
+                    Very satisfied
+                    <input type="radio" name="rank-service" checked value="VS">
+                </label><br>
+                <label for="">
+                    Satisfied
+                    <input type="radio" name="rank-service" value="S">
+                </label><br>
+                <label for="">
+                    Didin't care
+                    <input type="radio" name="rank-service" value="DC">
+                </label><br>
+                <label for="">
+                    Dissatisfied
+                    <input type="radio" name="rank-service" value="Ds">
+                </label><br>
+                <label for="">
+                    Very Dissatisfied
+                    <input type="radio" name="rank-service" value="VDs">
+                </label>
+            </div>
+            <br>
+        </div>
+        <div>
+            <label for="comments">Further comments:</label>
+            <textarea name="comments" id="comments" rows="3" cols="25"></textarea>
+        </div>
+        <div>
+            <label for="bio photos">Bio photo:</label>
+            <input type="file" accept="image/*">
+        </div>
+        <div>
+            <label for="location-visited">Location visited:</label>
+            <select name="location-visited" id="location-visited">
+                <option value="Argentina">Argentina</option>
+                <option value="Brasil">Brasil</option>
+                <option value="Arabia Saudita">Arabia Saudita</option>
+                <option value="Turquia">Turquia</option>
+                <option value="Italia">Italia</option>
+                <option selected value="NA" disabled>No seleccionado</option>
+
+            </select>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

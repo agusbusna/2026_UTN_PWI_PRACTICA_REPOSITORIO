@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <form action="">
+        <h1>Iniciar Sesión</h1>
+        <div>
+            <label for="usuario">Ingrese su nombre de usuario</label>
+            <input type="text" id="usuario" name="username">
+        </div>
+        <div>
+            <label>Ingrese su email
+                <input type="email" id="email" placeholder="pepito@mail.com" required>
+            </label> <!-- lo que se llama WRAP (creo) Esta es una manera de hacerle saber al navegador que el label
+             esta relacionado a ese input (lo que la hace más legible e inclusiva) es más DIFICIL para darle estilo (css)-->
+        </div>
+        <div>
+            <label for="email">Ingrese su contraseña</label>
+            <input type="password" id="email">
+        </div>
+        <div>
+            <label for="">Ingrese su fecha de nacimiento</label>
+            <input type="date" name="birth-date">
+        </div>
+        <div>
+            <span>Eliga su país de origen</span>
+            <div>
+                <label>
+                    Argentina
+                    <input type="radio" name="origin-country" checked value="AR">
+                </label>
+                <label>
+                    Francia
+                    <input type="radio" name="origin-country" value="FR">
+                </label>
+                <label>
+                    Brasil
+                    <input type="radio" name="origin-country" value="BR">
+                </label>
+
+            </div>
+        </div>
+        <div>
+            <label for="favorite-colour">Seleccione un color favorito</label>
+            <select name="favorite-colour" id="favorite-colour">
+                <option value="red">Rojo</option>
+                <option value="green">Verde</option>
+                <option value="blue">Azul</option>
+                <option selected value="NA" disabled>No seleccionado</option>
+
+            </select>
+
+        </div>
+        <div>
+            <label for="message">Mensaje:</label>
+            <textarea name="message" id="message" rows="10" cols="20"></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
