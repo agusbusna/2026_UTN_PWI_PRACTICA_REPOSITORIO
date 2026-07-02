@@ -14,64 +14,77 @@
         </div>
         <div>
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email">
+            <input type="email" id="email" required name="email">
         </div>
         <div>
             <label for="password">Password:</label>
-            <input type="password" id="password" name="password">
-        </div> <br>
+            <input type="password" id="password" required name="password">
+        </div> 
         <div>
-            <label for="options-emotions">Please check all the emotions that apply to you:</label><br>
-            <input type="checkbox" id="options-emotions" value="first-checkbox">Angry<br>
-            <input type="checkbox" id="Sad" value="second-checkbox">Sad <br>
-            <input type="checkbox" id="Happy" value="third-checkbox">Happy <br>
-            <input type="checkbox" id="Ambivalent" value="four-checkbox">Ambivalent
+            <span>Please check all the emotions that apply to you:</span>
+            <div>
+                <label for="options-emotions">Angry</label>
+                <input type="checkbox" id="options-emotions" value="first-checkbox" name="emotion">
+                
+            </div>  
+            <div>
+                <label for="Sad">Sad</label>
+                <input type="checkbox" id="Sad" value="second-checkbox" name="emotion">   
+            </div>
+            <div>
+                <label for="Happy">Happy</label>
+                <input type="checkbox" id="Happy" value="second-checkbox" name="emotion">   
+            </div>
+            <div>
+                <label for="Ambivalent">Ambivalent</label>
+                <input type="checkbox" id="Ambivalent" value="second-checkbox" name="emotion">   
+            </div>
+
         </div><br>
         <div>
             <span>How satisfied were you with our service:</span>
             <div>
-                <label for="">
+                <label>
                     Very satisfied
-                    <input type="radio" name="rank-service" checked value="VS">
-                </label><br>
-                <label for="">
+                    <input type="radio" name="satisfaction" checked value="VS">
+                </label>
+                <label>
                     Satisfied
-                    <input type="radio" name="rank-service" value="S">
-                </label><br>
-                <label for="">
+                    <input type="radio" name="satisfaction" value="S">
+                </label>
+                <label>
                     Didin't care
-                    <input type="radio" name="rank-service" value="DC">
-                </label><br>
-                <label for="">
+                    <input type="radio" name="satisfaction" value="DC">
+                </label>
+                <label>
                     Dissatisfied
-                    <input type="radio" name="rank-service" value="Ds">
-                </label><br>
-                <label for="">
+                    <input type="radio" name="satisfaction" value="Ds">
+                </label>
+                <label>
                     Very Dissatisfied
-                    <input type="radio" name="rank-service" value="VDs">
+                    <input type="radio" name="satisfaction" value="VDs">
                 </label>
             </div>
-            <br>
+            
         </div>
         <div>
             <label for="comments">Further comments:</label>
-            <textarea name="comments" id="comments" rows="3" cols="25"></textarea>
+            <textarea name="comments" id="comments" rows="3" cols="25" name="comments"></textarea>
         </div>
         <div>
-            <label for="bio photos">Bio photo:</label>
-            <input type="file" accept="image/*">
+            <label for="photo">Bio photo:</label>
+            <input type="file" accept="image/*" id="photo" name="photo">
         </div>
         <div>
             <label for="location-visited">Location visited:</label>
-            <select name="location-visited" id="location-visited">
-                <option value="Argentina">Argentina</option>
-                <option value="Brasil">Brasil</option>
-                <option value="Arabia Saudita">Arabia Saudita</option>
-                <option value="Turquia">Turquia</option>
-                <option value="Italia">Italia</option>
-                <option selected value="NA" disabled>No seleccionado</option>
-
-            </select>
+                <select name="location-visited" id="location-visited">
+                    <option value="Argentina">Argentina</option>
+                    <option value="Brasil">Brasil</option>
+                    <option value="Arabia Saudita">Arabia Saudita</option>
+                    <option value="Turquia">Turquia</option>
+                    <option value="Italia">Italia</option>
+                    <option selected value="NA" disabled>No seleccionado</option>
+                </select>
         </div>
         <button type="submit">Submit</button>
     </form>
