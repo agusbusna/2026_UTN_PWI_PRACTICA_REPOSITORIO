@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!-- Link ordena al navegador descargar algo, en este caso css, ordenamos al navegador descargar el css e interpretarlo como stylsheet (hoja de estilos) -->
+    <link rel="stylesheet" href="estilos.css">
+
+    <!--
+    CSS en HTML, la etiqueta style te permite escribir/incrustar CSS en un documento HTML
+    NO es una buena practica. Porque queremos que nuestros estilos se puedan compartir en distintos HTML. 
+    
+    <style>
+        h1{
+            color: aquamarine;
+            font-size: 100px;
+        }
+    </style>  -->
+</head>
+<body>
+    <!-- <h1 style="color: aquamarine; font-size: 100px;">Hola mundo</h1> Es una mala práctica, porque queremos repetir los estilos de manera más eficiente-->
+    <h1 
+        class="titulo subrayado" 
+        id="titulo-especial"
+    >
+        Hola mundo
+    </h1>
+    <h1>Hola mundo</h1> 
+    <h1 class="titulo">Hola mundo</h1>
+    <a href="./contacto.html">Ir a contactos</a>
+
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+h1 {
+    color: aquamarine;
+    font-size: 80px;
+}
+
+.titulo {
+    color: brown;
+}
+
+.subrayado {
+    text-decoration: 2px solid underline black;
+}
+
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/*
+Es una MALA PRACTICA: No usar ids
+#titulo-especial{
+    background-color: aquamarine;
+    text-shadow: 5px 5px 10px rgb(197, 98, 98);
+}*/
+
+/*
+Selectores CSS
+    Nos sirven para seleccionar elementos de nuestro HTML
+
+    - Elementos => permiten seleccionar elementos HTML
+        h1{} = Todos los h1
+
+    - Clase => Permiten seleccionar a todos los elementos que tengan x clase
+        .titulo{} = Todos los elementos con la clase titulo
+
+    - ID => Permiten seleccionar a todos los elementos que tengan un x ID
+        #titulo-especial{} = Todos los elementos con el id titulo-especial
+    
+    - Selector universal => Permite selecciona a todos los elementos del HTML
+        *{} = Todos los elementos tendran este estilo
+
+
+ESPECIFICIDAD
+    La especificidad es determinada por que tan espeficico es el selector/tipo de css que usamos.
+
+    A mas especificidad mas especifica es una orden y por ende mas importancia tiene.
+
+    Si la especificidad es la misma entonces se definira la orden por el orden de lectura, la ultima orden sera la valida.
+*/
