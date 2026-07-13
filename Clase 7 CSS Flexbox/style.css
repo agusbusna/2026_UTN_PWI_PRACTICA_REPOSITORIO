@@ -1,0 +1,49 @@
+/*Normalización*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.padre{
+    background-color: green;
+    height: 100vh; /* 100vh= 100% de alto de viewpoint*/
+    width: 100vw;
+
+    /*Activamos flexbox en este elemnto*/
+    display: flex;
+    flex-direction: row; /*or Column*/
+
+    justify-content: center; /* Cuando flex-direction es row, justify-content se mueve en el eje X (horizontalmente)*/
+    align-items: start; /*Cuando flex-direction es row, align-items se mueve en el eje Y (Verticalmente)*/
+    gap: 20px;
+/*    flex-wrap: wrap;*/
+
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 70px;
+}
+
+.hijo {
+    width: 250px;
+    height: 350px;
+    border-radius: 12px;
+    background-color: black;
+}
+
+.hijo-1{
+    background-color: aqua;
+}
+
+.hijo-2{
+    background-color: azure;
+}
+
+.hijo-2{
+    background-color: brown;
+}
