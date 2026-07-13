@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    font-family: "Open Sans", sans-serif;
+    box-sizing: border-box;
+}
+
+.btn-turnos{
+    
+    color: rgb(95, 94, 94);
+    padding: 6px 12px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: rgb(218, 176, 38);
+    border: none;
+    border-radius: 10px;
+}
+
+.btn-get-color{
+    fontfont-family: "Inter", sans-serif;
+    color: rgb(224, 224, 224);
+    font-size: 16px;
+    font-weight: 600;
+    background-color: black;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px 12px 25px;
+}
+
+
+
+.paragraph {
+    background-color: #18150F;
+    color: #CFB78B;
+    padding: 10px 10px 10px 20px;
+}
+.link-primary {
+    color: #D49234;
+    text-decoration: none;
+}
