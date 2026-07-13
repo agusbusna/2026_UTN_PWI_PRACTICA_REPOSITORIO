@@ -27,13 +27,14 @@
     padding: 12px 20px 12px 25px;
 }
 
-a{
-    color: rgb(217, 165, 45);
-    text-decoration: none;
-}
-.comunidad{
-    background-color: rgb(44, 34, 14);
-    color: rgb(237, 237, 161);
-    text-align: left;
+
+
+.paragraph {
+    background-color: #18150F;
+    color: #CFB78B;
     padding: 10px 10px 10px 20px;
+}
+.link-primary {
+    color: #D49234;
+    text-decoration: none;
 }
