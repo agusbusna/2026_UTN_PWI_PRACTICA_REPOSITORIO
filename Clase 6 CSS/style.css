@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&display=swap');
+
+/*
+{
+    font-family: "Poppins", sans-serif;
+}
+    */
+*{
+    /*box-sizing define a donde esta afectando el width y el height; por defecto es content-box*/
+    box-sizing: border-box;
+    
+}
+h1 {
+    font-family: "Roboto Flex", sans-serif;
+    text-shadow: 0px 0px 3px rgb(24, 86, 86);
+    
+    /*
+    color
+    text-aling
+    font-weigth
+    font-size
+    line-height
+    word-spacing
+    letter-spacing
+    background-color
+    */
+}
+.caja-header{
+    background-color: aqua;
+    width: 250px;
+    height: 50px;
+    border: 1px solid  rgb(13, 45, 56);
+    
+}
+
+p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    text-decoration: underline 2px blue wavy; 
+}
+
+a{
+        text-decoration: none;
+}
+
+button{
+    background-color: brown;
+}
+
+.caja{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;
+    border: 5px solid black;
+    padding: 20px 10px 5px 20px; /* cada valor se lee como las agujas del reloj. arriba, derecha, abajo izquierda*/
+    margin: 10px 5px 0px 0px; /* Con MARGIN tmb se puede hacer cada valor se lee como las agujas del reloj. arriba, derecha, abajo izquierda*/
+    border-radius: 20px;
+}
+
+.caja-3{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    margin: 50px;
+    box-shadow: 
+        250px -100px 20px black, /* valor 1= horizontal, valor 2=vertical valor 3=blur valor 4=color de la sombra valor 5=para alejar el objeto de la luz o acercarlo*/
+        200px 50px 30px 10px black,
+        inset 100px 180px 30px -20px red;
+
+}
+
+/*
+
+Los elementos se separan en 3 categorias:
+    -block: 
+        -Podemos modificar el ancho y el alto.
+        -Ocupan todo el bloque
+            Ej: div, h1-h6, etiquetas semanticas (main, header, etc.)
+        form
+    -inline:
+        -No podemos modificar el ancho y el alto
+        -Ocupa solo su contenido y deja que otros elementos se alineen con él 
+            EJ: span, a, label
+    -inline-block
+        -Podemos modificar el ancho y el alto
+        -Ocupa solo su contenido y deja que otros elementos se alineen con él 
+            EJ: button, img, video, input
+
+font-family
+text-decoration =Subrayar, tachar y otras cosas
+
+box-modeling:
+    widh
+    height
+    padding =relleno entre el borde y el contenido
+    margin
+
+    border =para hacer bordes
+
+box-shadow = Sombras
+text-shadow = Sombras en texto
+
+*/

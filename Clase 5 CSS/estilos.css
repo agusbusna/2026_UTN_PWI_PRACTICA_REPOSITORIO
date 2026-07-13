@@ -45,3 +45,22 @@ ESPECIFICIDAD
 
     Si la especificidad es la misma entonces se definira la orden por el orden de lectura, la ultima orden sera la valida.
 */
+/* 
+Las propiedades de css nos permiten modificar los estilos de nuestra pagina
+*/
+
+.title{
+    font-size: 120px; /* Tamaño de fuente */
+    font-family: 'Times New Roman', Times, serif; /* Fuente */
+    font-weight: 600; /* Peso de la fuente */
+    text-align: center;
+    word-spacing: 50px; /* Espacio entre palabras */
+    letter-spacing: 5px; /* Espacio entre letras */
+    color: #7c0202;
+}
+
+p{
+    text-align: justify; /* Alineamiento de texto */
+    line-height: 16px; /* Interlineado */
+
+}

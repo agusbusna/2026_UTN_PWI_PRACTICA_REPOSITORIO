@@ -26,6 +26,7 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    background-color: gold;
     padding: 20px 70px;
 }
 
