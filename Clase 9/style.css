@@ -64,6 +64,7 @@ header{
     z-index: 10;
     position: sticky;
     top: 0;
+    z-index: 20;
 }
 
 form{
@@ -140,6 +141,6 @@ form input{
 .header-bloque{
     position: sticky;
     top: 32px;
-    z-index: 20;
+    z-index: 19;
     background-color: white;
 }
