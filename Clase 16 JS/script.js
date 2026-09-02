@@ -156,21 +156,9 @@ producto.precio= producto.precio +1
  */
 
     const productos =[
-        {
-            nombre: "tv samsung",
-            id: 1,
-            precio: 120000, 
-            categorias: ["Tecnologia", "Hogar"]
-        },
-        {
-            nombre: "tv noblex",
-            id: 2,
-            precio: 100000, 
-            categorias: ["Tecnologia", "Hogar"]
-        },
-        {
-            nombre: "tv noblex",
-            id: 3,
+        { nombre: "tv samsung", id: 1,precio: 120000, categorias: ["Tecnologia", "Hogar"]},
+        {nombre: "tv noblex",id: 2, precio: 100000, categorias: ["Tecnologia", "Hogar"]},
+        {nombre: "tv noblex",id: 3,
             precio: 120000, 
             categorias: ["Tecnologia", "Hogar"]
         },
@@ -205,19 +193,26 @@ producto.precio= producto.precio +1
 function buscarProductoPorId(productos, idBuscado){
     for(const producto of productos){
         if(producto.id ===idBuscado){
-            return producto
-            break;
+            return producto;
         } 
     }
-    return console.log("El producto que busca no se encuentra disponible")
+    return console.log("El producto que busca no se encuentra disponible") // return null (puede ser tmb)
 }
 //buscarProductoPorNombre(productos, nombreBuscado) Buscar un producto por nombre y retornarlo
 
 function buscarProductoPorNombre(productos, nombreBuscado){
     for (const producto of productos){
         if(producto.nombre===nombreBuscado){
-            return producto
-            break;
+            return producto;
+        }
+    }
+    return console.log("El producto que busca no se encuentra disponible")
+}
+// (Buscador optimizado)
+function buscarProductoPorNombre(productos, nombreBuscado){
+    for (const producto of productos){
+        if(producto.nombre.toLowerCase().includes(nombreBuscado.toLowerCase())){
+            return producto;
         }
     }
     return console.log("El producto que busca no se encuentra disponible")
@@ -228,9 +223,11 @@ function buscarProductoPorNombre(productos, nombreBuscado){
 function filtrarPorPrecioMin(productos, precioMin){
     const productosFiltrados=[]
     for(const producto of productos){
-        if(producto.precio>=precioMin){
+        if(producto.precio >= precioMin){
             productosFiltrados.push(producto)
         }
+//        if(productosFiltrados >= 10){
+//            break;}
     }
     return productosFiltrados
 }
@@ -240,14 +237,14 @@ function filtrarPorPrecioMin(productos, precioMin){
 function agregarCategoriaAProducto(productos, id, categoria){
     for(const producto of productos){
         if (producto.id === id){
-            if(producto.categorias.includes(categoria)){
-                console.log("La categoria ya existe")
-            } else {
+            if(!producto.categorias.includes(categoria)){
                 producto.categorias.push(categoria)
+                return true
             }
-            return producto.categorias
+            return false
         }
     }
+    return false
 }
 
 
@@ -262,6 +259,15 @@ function eliminarProductoPorId(productos, id){
         }
     }
     return productos
+}
+
+function eliminarProductoPorId(productos, id){
+    for(
+        let i= 0;
+        i >= productos.length;
+        i = i + 1
+    )
+    
 }
 /* let indice_jose = nombres.indexOf("jose")
 nombres.splice(indice_jose, 1, "josesito") */

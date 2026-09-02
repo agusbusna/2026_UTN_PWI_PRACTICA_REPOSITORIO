@@ -1,0 +1,11 @@
+.btn_resta{
+    background-color: red;
+    border-radius: 999px;
+    padding: 4px;
+}
+
+.btn_suma{
+    background-color: green;
+    border-radius: 999px;
+    padding: 4px;
+}
