@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './global.css'
 import ProductCard from './Componentes/ProductCard/ProductCard'
-import Counter from "./componentes/Counter/Counter"
+import Counter from "./Componentes/Counter/Counter.jsx"
 
 export default function App() {
 
