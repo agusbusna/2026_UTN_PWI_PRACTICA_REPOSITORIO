@@ -1,0 +1,27 @@
+.btn-volver{
+    text-decoration: none;
+    display: inline-flex;
+    align-items: left;
+    justify-content: flex-start;
+    text-decoration: none;
+    color: #075E54;
+    padding: 20px;
+
+}
+.contact-detail-screen{
+    display: flex;
+    flex-direction: column;
+}
+
+.img-contact-detail-container{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.img-contact-detail{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}

@@ -1,31 +1,10 @@
 import React from 'react'
-import { useState } from 'react'
+import useLogin from '../../hooks/useLogin'
 
 export default function LoginForm() {
-    
-    const [formState, setFormState] = useState ({email: "", password: ""})
 
-    function handleSubmit(evento){
-        evento.preventDefault() //Evita que se recargue la pagina
-        const form = evento.target //target es una referencia del elemento de donde se desencadeno el evento
-        const email = form.email.value
-        const password = form.password.value
-        
-    }
-    
-    function handleChangeInput(evento){
-        const campo = evento.target //hace referencia al campo que el usuario esta modificando
-        const nombre_campo = campo.name
-        const valor_campo = campo.value
-        setFormState(
-            (prevFormState) => {
-                const cloned_state = {...prevFormState} //spread operator
-                cloned_state[nombre_campo] = valor_campo
-                return cloned_state
-            }
-        )
-    }
-    console.log(formState)
+    const {formState, handleSubmit, handleChangeInput} = useLogin()
+
     return (
         <form onSubmit={handleSubmit}>
             <h1>Iniciar sesion</h1>
@@ -54,6 +33,19 @@ export default function LoginForm() {
     )
 }
 
+
+
+/* 
+
+Destructuring objetos
+
+
+
+Spread Operator
+
+
+
+*/
 /* 
     En react existen dos tipos de formularios
         Los normales:
@@ -93,3 +85,4 @@ export default function LoginForm() {
 }
 
 */
+
