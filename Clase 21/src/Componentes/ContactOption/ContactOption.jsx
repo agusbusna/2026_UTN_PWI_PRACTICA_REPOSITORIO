@@ -19,7 +19,6 @@ export default function ContactOption({imagen, nombre, ultimo_mensaje,fecha_ulti
                     )}
                 </div>
             </div>
-            <hr />
         </div>
     )
 }

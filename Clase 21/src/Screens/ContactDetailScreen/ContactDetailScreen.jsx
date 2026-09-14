@@ -41,11 +41,8 @@ export default function ContactDetailScreen() {
     ]
 
     const { contact_id } = useParams()
-    console.log("Estamos en el producto con id: " + contact_id)
 
     let contacto_seleccionado = null
-    console.log("contact_id recibido:", contact_id)
-    console.log("lista de ids disponibles:", contact_list.map(c => c.id))
 
     for (const contacto of contact_list) {
         if (contacto.id === Number(contact_id)) {
@@ -59,16 +56,19 @@ export default function ContactDetailScreen() {
         )
     }
     return (
-        <div className='contact-detail-screen'>
-            <h1>{contacto_seleccionado.nombre}</h1>
-            <div className='img-contact-detail-container'>
-                <img src={contacto_seleccionado.imagen} alt={contacto_seleccionado.nombre} className='img-contact-detail' />
-            </div>
-            <Link to="/home" className="btn-volver">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M19 12H5M12 19l-7-7 7-7" />
-                </svg>
-            </Link>
-        </div >
+        <div className='body-screen-detail'>
+            <div className='contact-detail-screen'>
+                <Link to="/home" className="btn-volver">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M19 12H5M12 19l-7-7 7-7" />
+                    </svg>
+                </Link>
+                <div className='img-contact-detail-container'>
+                    <img src={contacto_seleccionado.imagen} alt={contacto_seleccionado.nombre} className='img-contact-detail' />
+                </div>
+                <h1 className='nombre-contacto-detail'>{contacto_seleccionado.nombre}</h1>
+                
+            </div >
+        </div>
     )
 }
