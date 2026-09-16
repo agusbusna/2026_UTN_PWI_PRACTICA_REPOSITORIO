@@ -1,11 +1,16 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { useParams } from 'react-router'
 import { Link } from 'react-router'
 import "./ContactDetailScreen.css"
 import Sidebar from '../../Componentes/Sidebar/Sidebar'
+import { ThemeContext } from '../../Context/ThemeContext'
+import { LangContext } from '../../Context/LangContext'
 
 export default function ContactDetailScreen() {
-
+    const {theme} = useContext(ThemeContext)
+    console.log("ContactDetailScreen.jsx", theme)
+    const {langSelected} = useContext (LangContext)
+        console.log("[ContactDetailScreen.jsx]", langSelected)
     const contact_list = [
         {
             id: 1,

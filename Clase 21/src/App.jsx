@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import './global.css'
 import PostList from './Componentes/PostList/Postlist'
 import Counter from './Componentes/Counter/Counter'
@@ -9,11 +9,17 @@ import LoginScreen from './Screens/LoginScreen/LoginScreen'
 import NotFoundScreen from './Screens/NotFoundScreen/NotFoundScreen'
 import ProductDetailScreen from './Screens/ProductDetailScreen/ProductDetailScreen'
 import ContactDetailScreen from './Screens/ContactDetailScreen/ContactDetailScreen'
+import { ThemeContext } from './Context/ThemeContext'
+import { LangContext } from './Context/LangContext'
 
 
 
 
 export default function App() {
+    const {theme, nombre_favorito} = useContext(ThemeContext)
+    console.log("App.jsx", theme)
+    const {langSelected} = useContext (LangContext)
+    console.log("[App.jsx]", langSelected)
     return(
             <Routes>
                 <Route path= "/" element= {<HomeScreen/>}/>
